@@ -1,0 +1,18 @@
+<mvc:View
+	controllerName="sap.ui.learning.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+	<Shell>
+		<App class="myAppDemoWT">
+			<pages>
+				<Page title="{i18n>homePageTitle}">
+					<content>
+						<mvc:XMLView viewName="sap.ui.learning.view.HelloPanel" />
+						<mvc:XMLView viewName="sap.ui.learning.view.InvoiceList" />
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

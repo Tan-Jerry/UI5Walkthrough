@@ -33,5 +33,10 @@ sap.ui.define([
 			oBinding.filter(aFilter);
 	};
 
+	theClass.prototype.onPress = function(oEvent) {
+		var oRouter = this.getOwnerComponent().getRouter();
+		oRouter.navTo("detail");
+	}
+
 	return theClass;
 });

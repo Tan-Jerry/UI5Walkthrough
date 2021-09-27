@@ -25,5 +25,9 @@ sap.ui.define([
 		});
 	};
 
+	theClass.prototype.onCloseDialog = function () {
+		this.byId("helloDialog").close();
+	}
+
 	return theClass;
 });

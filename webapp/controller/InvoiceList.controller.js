@@ -1,10 +1,13 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/model/json/JSONModel"
-], function(Controller, JSONModel) {
+	"sap/ui/model/json/JSONModel",
+	"../model/formatter"
+], function(Controller, JSONModel, formatter) {
 	'use strict';
 
-	const theClass = Controller.extend("sap.ui.learning.controller.InvoiceList", {});
+	const theClass = Controller.extend("sap.ui.learning.controller.InvoiceList", {
+		formatter: formatter
+	});
 
 	theClass.prototype.onInit = function() {
 		let oViewModel = new JSONModel({
